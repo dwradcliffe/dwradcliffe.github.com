@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'hpricot'
 require 'fileutils'
+require 'date'
 
 # This importer takes a wordpress.xml file,
 # which can be exported from your 
@@ -16,7 +17,8 @@ module Jekyll
 			
 			(doc/:channel/:item).each do |item|
 				title = item.at(:title).inner_text
-				name = "#{Date.parse((doc/:channel/:item).first.at(:pubDate).inner_text).strftime("%Y-%m-%d")}-#{title.downcase.gsub('[^a-z0-9]', '-')}.html"
+				date = item.at(:pubDate).inner_text
+				name = "#{Date.parse(date).strftime("%Y-%m-%d")}-#{title.downcase.gsub(" ", '-').gsub('[^a-z0-9]', '-')}.html"
 				
 				File.open("_posts/#{name}", "w") do |f|
           f.puts <<-HEADER
