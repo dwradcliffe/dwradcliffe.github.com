@@ -1,0 +1,6 @@
+---
+layout: post
+title: Customize Firefox Address Bar Search
+---
+ 
+<p>By default, when you type something into the address bar in Firefox it will use Google's &quot;I'm feeling lucky&quot; search to send you to the 'best' website. I never use this feature and (more importantly for me) my workplace blocks a certain parameter in this query so I wanted to change this behavior.</p>  <p>This is so easy to change it's almost trivial. Simply open the <strong>about:config</strong> page in Firefox and filter for &quot;<strong>keyword.url</strong>&quot;. The one remaining preference will be the one you want to edit. Double click and replace the value with:</p>  <p><strong>http://www.google.com/search?q=</strong></p>  <p>This will cause Firefox to perform a nice vanilla Google search.</p>

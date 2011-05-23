@@ -1,0 +1,24 @@
+---
+layout: post
+title: Re-building Android apps in Eclipse
+---
+ 
+<p>Today I ran into a weird problem. I was working on our android mobile app and I wanted to make sure the .apk file I sent to QA was the most recent version. So I just dropped into the /bin directory and deleted the .apk. I assumed that the next build would absolutely re-create it with the most recent version. Instead, Eclipse gave me the following error: </p>  <pre>java.io.IOException: Unable to upload file: Local file doesn't exist.</pre>
+
+<p></p>
+
+<p>I tried just about everything to get it to work. I turned off automatic building and tried building myself. Nothing seemed to work. Finally I found the clean project menu item and tried that. Nothing seemed to happen but when I tried running again after that it finally worked.</p>
+
+<p>It seems that Eclipse must not replace the .apk file but instead attempts to open and edit the file. A bit weird – but I can deal with it. It also seems that Eclipse doesn’t actually check to see if the file exists before it attempts to open it. Only after a ‘clean’ command does Eclipse create the file.</p>
+
+<p>My final solution to be 100% sure the apk is current:</p>
+
+<ol>
+  <li>Manually delete the .apk file </li>
+  <li>Run the clean command from Eclipse </li>
+  <li>Run or debug the project </li>
+</ol>
+
+<p></p>
+
+<p>I hope this helps someone else!</p>

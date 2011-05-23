@@ -1,0 +1,28 @@
+---
+layout: post
+title: Configuring DiffMerge for use with git
+---
+ 
+The default git merge tool was getting annoying so I decided it was time to get a more user-friendly tool. Here are the easy steps:
+
+<ol>
+	<li>Download DiffMerge: <a href="http://www.sourcegear.com/diffmerge/downloads.html">http://www.sourcegear.com/diffmerge/downloads.html</a></li>
+	<li>Install DiffMerge<br />
+I just followed the instructions in the README. Then I renamed diffmerge.sh to diffmerge.
+</li>
+	<li>Setup git:
+
+<pre class="bash">
+git config --global diff.tool diffmerge
+git config --global difftool.diffmerge.cmd "diffmerge \"\$LOCAL\" \"\$REMOTE\""
+
+git config --global merge.tool diffmerge
+git config --global mergetool.diffmerge.cmd "diffmerge --merge --result=\"\$MERGED\"
+\"\$LOCAL\" \"\$BASE\" \"\$REMOTE\""
+git config --global mergetool.diffmerge.trustexitcode false
+</pre>
+</li>
+
+
+</ol>
+

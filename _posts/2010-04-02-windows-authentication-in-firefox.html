@@ -1,0 +1,22 @@
+---
+layout: post
+title: Windows Authentication in Firefox
+---
+ 
+Many .NET based web apps and enterprise web apps use Windows authentication so you don't have to ever login - your browser automatically uses your windows credentials. For a long time I assumed this only worked in Internet Explorer but I recently found that Firefox will do this too! All you need to do is tell it which websites are allowed to use the windows credentials and you all set. Here are the steps:
+<ol>
+	<li>Visit <a href="about:config">about:config</a> in Firefox.</li>
+	<li>You might need to click the "I'll be careful, I promise!" button to continue.</li>
+	<li>Use the filter at the top to find the following three properties (one at a time)
+<ul>
+	<li>network.negotiate-auth.trusted-uris</li>
+	<li>network.negotiate-auth.delegation-uris</li>
+	<li>network.automatic-ntlm-auth.trusted-uris</li>
+</ul>
+</li>
+	<li>Double click the property and add the URL of the site you are trying to use Windows authentication with to the value. If you have several sites, separate them with commas.</li>
+</ol>
+
+Thats it!
+
+<p><span style="color: #888888;">You should <a href="http://www.twitter.com/dwradcliffe"">follow me on twitter</a> @dwradcliffe.</span></p>

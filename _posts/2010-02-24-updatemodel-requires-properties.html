@@ -1,0 +1,12 @@
+---
+layout: post
+title: UpdateModel requires properties
+---
+ 
+I was working on a feature at work this week on a ASP MVC project. I was attempting to use UpdateModel to update an object retrieved from the database with values from the POST. If you aren't familiar with it, ASP MVC has a "magic method" to map these POST values to an object. One simply needs to call 
+<pre lang="csharp">UpdateModel(myObjectFromDatabase);</pre>
+ and the new values will be changed on the object.
+
+That is all fine and dandy unless it doesn't work. I had checked everything. I could verify that the values were in the Request header. I could verify that UpdateModel was called and did not fail. The values simply were not updated.
+
+I finally found the key (thanks to my supervisor). The object I was updating had a mix of auto-properties and fields. Apparently, UpdateModel will only update properties. A quick change from a field to an auto-property and everything worked as it should. Thanks Aaron!

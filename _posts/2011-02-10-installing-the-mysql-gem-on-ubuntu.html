@@ -1,0 +1,12 @@
+---
+layout: post
+title: Installing the mysql gem on Ubuntu
+---
+ 
+If you're trying to install the mysql gem on Ubuntu (and possibly other distros) you need several packages installed prior to installing the gem. I keep forgetting so here they are. Hopefully this will help someone else too.
+
+<pre>
+$ apt-get install mysql-client
+$ apt-get install libmysqlclient15-dev
+$ gem install mysql
+</pre>

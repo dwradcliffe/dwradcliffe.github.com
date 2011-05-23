@@ -1,0 +1,36 @@
+---
+layout: post
+title: Clean Phone Numbers
+---
+ 
+I've been working with a lot of person type data recently at work and I'm using data from multiple sources. Not just two databases but two separate systems with similar and yet incompatible data. One of the biggest messes was the phone numbers. I need to convert a phone number from a completely un-normalized format to a very strict format. I'm no regular expression genius so thankfully a quick Google search produced a nice PHP method of doing pretty much exactly what I was looking for. (<a href="http://cnanney.com/journal/code/cleaning-phone-numbers-with-regex/">http://cnanney.com/journal/code/cleaning-phone-numbers-with-regex/</a>) I took that method and re-wrote it in C# and tweaked it a little for my application. I'm sure this isn't the absolute best way to do this but it works for me.
+
+<pre lang="csharp" line="1">
+const string pattern = @"\D*\(?(\d{3})?\)?\D*(\d{3})\D*(\d{4})\D*(\d{1,8})?";
+string num, ext;
+var matches = new Regex(pattern).Match(number).Groups;
+if (matches.Count > 0)
+{
+if (matches[3].Length > 0)
+{
+if (matches[1].Length > 0)
+{
+num = "(" + matches[1].Value + ") " + matches[2].Value + "-" + matches[3].Value;
+}
+else
+{
+num = matches[2].Value + "-" + matches[3].Value;
+}
+}
+else
+{
+num = null;
+}
+ext = matches[4].Length > 0 ? matches[4].Value : null;
+}
+else
+{
+num = null;
+ext = null;
+}
+</pre>

@@ -1,0 +1,13 @@
+---
+layout: post
+title: Update Rubygems to 1.3.7 on Ubuntu
+---
+ 
+This isn't the first or only place this is on the web but I keep forgetting so I'm posting this to remind myself. Maybe it will help someone else too.
+
+The problem is that the packaged version of rubygems is stuck at 1.3.5 and rails 3.0 requires 1.3.6.  Here is the easy fix...
+
+<code>sudo gem install rubygems-update --no-rdoc --no-ri</code>
+<code>sudo update_rubygems</code>
+
+Then you can use <code>gem -v</code> to check!
