@@ -9,17 +9,22 @@ As a freshman in college I was inducted into the upperclassmen Computer Majorsâ€
 
 The summer after that first year of school I started a company doing mostly web development and continued cultivating the business through my senior year. I have developed many websites using PHP, MySQL and a variety of other client and server software. I have worked for clients all over the country, analyzing, planning and developing solutions to fit their needs.
 
-I have developed websites and software on the LAMP stack and Windows servers.
+I have developed websites and software on the LAMP stack and Windows servers as well as other open source stacks.
 
-I have spent extensive time developing in the Microsoft Visual Studio environment, as well as the open source Eclipse environment.
+Currently I develop mostly with TextMate and iTerm2. In the past I have spent extensive time developing in the Microsoft Visual Studio environment, as well as the open source Eclipse environment.
 
-I recently obtained my Zend PHP 5 Certification.
+I obtained my Zend PHP 5 Certification in 2009.
 
-I am comfortable developing with PHP, MySQL, (X)HTML, JavaScript, jQuery, MooTools, MS-SQL, ASP.NET, C#, Silverlight, Flash, and ActionScript.
+I am comfortable developing with Ruby, PHP, MySQL, (X)HTML, JavaScript, jQuery, MooTools, MS-SQL, ASP.NET, C#, Silverlight, Flash, and ActionScript.
 
 The software tools I most often use include:
+
 Adobe: Dreamweaver, Photoshop, Illustrator, Bridge, ImageReady, Premiere Pro, Flash
+
 Microsoft: Office, FrontPage, Visual Studio 2008, Visual Studio 2010, Visio, Project
+
 Platforms: Microsoft Windows 2000, Microsoft Windows XP, Microsoft Windows Vista, Microsoft Windows 7, Apple OS X, Windows Phone, Android
+
 Browsers: Microsoft Internet Explorer, Mozilla Firefox, Google Chrome
+
 Other: Eclipse, FileZilla, Putty, Firebug, ReSharper
