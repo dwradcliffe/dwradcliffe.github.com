@@ -20,6 +20,7 @@ Excellent accounting software. Kicks Quickbooks in the pants.
 ## [Trello](https://trello.com)
 New one - realtime project management organization. Create lists and tasks. Assign team members. Comment, vote, upload, prioritize.
 
-
+## [New Relic RPM](http://newrelic.extole.com/a/clk/3dHTP)
+Performance monitoring and notification service. Awesome for fine tuning a web app.
 
 
