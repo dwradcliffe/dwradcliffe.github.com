@@ -16,9 +16,9 @@ Often part of building a website is being able to import static data into the da
     require 'csv'
 
     desc "Import teams from csv file"
-    task :import do
+    task :import => [:environment] do
 
-      file = "data/teams.csv"
+      file = "db/teams.csv"
       
       CSV.foreach(file, :headers => true) do |row|
         Team.create {
