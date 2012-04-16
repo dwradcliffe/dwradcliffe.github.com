@@ -218,3 +218,40 @@ blockquote small {
   line-height: 18px;
   color: #BFBFBF;
 }
+
+
+/* Responsive Styles */
+
+@media (max-width: 320px) {
+  
+  #github_ribbon {
+    display: none;
+  }
+  .title a {
+    display: block;
+  }
+  .posts li a {
+    display: block;
+  }
+  .site .footer .contact {
+    margin-right: 2em;
+  }
+  .site .footer .contact + .contact {
+    margin-right: 0;
+  }
+  .site .footer .rss {
+    float: none;
+    clear: both;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+  .site {
+    margin-top: 0;
+    width: auto;
+  }
+}
+
