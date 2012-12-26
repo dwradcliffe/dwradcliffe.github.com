@@ -3,6 +3,6 @@ task :import do
   
   require '_lib/wordpress.com'
   require 'date'
-  Jekyll::WordpressDotCom.process
+  Jekyll::WordpressDotCom.process('_import/pages.xml')
   
 end
