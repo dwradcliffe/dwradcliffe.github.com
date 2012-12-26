@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+a {
+  color: #00a;
+}
+
+a:hover {
+  color: #00a;
+}
+
+a:visited {
+  color: #00a;
+}
+
+body {
+  background-color: #F6F6F6;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+}
+
+.header {
+  background-color: #2B2B2B;
+  height: 25px;
+  text-align: center;
+  box-shadow: inset 0 0 10px black;
+  width: 100%;
+  top: 0;
+}
+
+.header .name {
+  float: left;
+  color: #EEE;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 3px;
+}
+
+.header .nav {
+  float: right;
+}
+
+.header .nav a {
+  color: #EEE;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.photo {
+  height: 300px;
+  background-image: url(/images/david_radcliffe.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  border-bottom: 2px solid #EEE;
+  font-weight: 100;
+  font-size: 33px;
+  margin: 15px 0;
+}
+
+h2 {
+  border-bottom: 1px solid #EEE;
+  font-weight: 100;
+  font-size: 19px;
+  margin: 5px 0;
+}
+
+p {
+  font-size: 17px;
+  line-height: 145%;
+  margin: 25px 0;
+}
+
+ul.posts li {
+  list-style: none;
+  padding: 7px 5px;
+  border-bottom: 1px solid #EEE;
+}
+
+ul.posts li span {
+  float: right;
+  color: #666;
+}
+
+.post p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#dsq-footer, .dsq-trackback-url {
+  display: none;
+}
+
+#disqus_thread h3 {
+  font-weight: normal;
+}
+
+.end {
+  text-align: center;
+  font-size: 30px;
+}
+
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul,
+.post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  font-size: 85%;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+
+.post pre.terminal {
+  border: 1px solid black;
+  background-color: #333;
+  color: white;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
+
+#related {
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 480px) {
+  .header .name {
+    margin-left: 5px;
+  }
+  .content {
+    padding: 5px;
+  }
+  .container {
+    width: auto;
+  }
+  ul.posts li span {
+    display: none;
+  }
+}

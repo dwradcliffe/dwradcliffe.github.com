@@ -1,13 +1,15 @@
 ---
-layout: default
+layout: home
 title: David Radcliffe
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<p>I'm a web developer currently working as Lead Developer for Trabian Technology. I've been building <a href="http://www.lifegrouphub.com">LifegroupHUB</a> in my spare time. I'm married to the best teacher in the world, <a href="http://www.kathrynradcliffe.com">Kathryn Radcliffe</a>. I've been working on the web since I was in high school.</p>
+
+<p>You can find me on <a href="http://twitter.com/dwradcliffe">Twitter</a>, <a href="https://github.com/dwradcliffe">GitHub</a>, and <a href="https://coderwall.com/dwradcliffe">Coderwall</a>.
+
+<h2>Recent Posts</h2>
+<ul class="posts">
+  {% for post in site.posts limit:7 %}
+    <li><span>{{ post.date | date_to_string }}</span><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
