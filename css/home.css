@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+a {
+  color: #00a;
+}
+
+a:hover {
+  color: #00a;
+}
+
+a:visited {
+  color: #00a;
+}
+
+
+
+body {
+  background-image: url(/images/david_radcliffe_wedding2.jpg);
+  background-position: top left;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #e3dfdc;
+  padding: 2em 1em 2em 40px;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Neuton', 'Times', serif;
+  font-size: 4em;
+  font-weight: 700;
+  color: white;
+  padding: 0px 0.125em;
+  background-color: rgba(3, 129, 226, 0.5);
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.wrapper {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 40%;
+}
+
+.line p {
+  background-color: rgba(3, 129, 226, 0.5);
+  display: inline-block;
+  padding: 0.125em;
+  margin: 10px 0;
+}
