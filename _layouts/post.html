@@ -8,7 +8,7 @@ layout: default
       {{ content }}
       <div class="end">◆</div>
 
-    {% if site.enable_disqus %}
+    {% if page.comments %}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = 'dwradcliffe';
@@ -23,6 +23,7 @@ layout: default
     <div class="end">◆</div>
     {% endif %}
 
+    {% if page.related %}
     <div id="related">
       <h2>Related Posts</h2>
       <ul class="posts">
@@ -31,5 +32,7 @@ layout: default
         {% endfor %}
       </ul>
     </div>
+    {% endif %}
+
   </div>
 </div>

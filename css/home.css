@@ -156,6 +156,16 @@ ul.posts li span {
   margin-top: 10px;
 }
 
+.post .center {
+  display: block;
+  text-align: center;
+}
+
+.post .center img {
+  margin: 5px;
+  border: 1px solid #C9C9C9;
+}
+
 /* Responsive Styles */
 
 @media (max-width: 480px) {
