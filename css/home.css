@@ -166,6 +166,10 @@ ul.posts li span {
   border: 1px solid #C9C9C9;
 }
 
+.post .author {
+  display: none;
+}
+
 /* Responsive Styles */
 
 @media (max-width: 480px) {
