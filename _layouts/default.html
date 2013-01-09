@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width">
   
   <meta name="author" content="David Radcliffe" />
-  <meta content='David Radcliffe' property='og:title'>
+  <meta content='{{ page.title }}' property='og:title'>
   <meta content='website' property='og:type'>
-  <meta content='http://dwradcliffe.com' property='og:url'>
-  <meta content='Personal website and blog of David Radcliffe - web software engineer.' property='og:description'>
+  {% if page.description %}<meta content='{{ page.description }}' property='og:description'>{% endif %}
+  <meta content='http://dwradcliffe.com{% if page.url != "/index.html" %}{{ page.url }}{% else %}/{% endif %}' property='og:url'>
 
   <link href="http://feeds.feedburner.com/dwradcliffe" rel="alternate" title="David Radcliffe" type="application/atom+xml" />
   

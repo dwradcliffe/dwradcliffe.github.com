@@ -1,6 +1,7 @@
 ---
 layout: home
 title: About David Radcliffe
+description: Brief history of David Radcliffe.
 ---
 
 I graduated with a Bachelor of Science in Computer Internet Development from Indiana Wesleyan University in April 2009.

@@ -3,9 +3,10 @@ layout: post
 title: New Year, New Design
 comments: false
 related: false
+description: To ring in the new year, I revamped the site design.
 ---
 
-To ring in the new year, I've revamped the site design. Last year was a busy year, and I didn't make much time for this site or writing. I'm trying to change that this year and so a refreshed look was a good way to start.
+To ring in the new year, I revamped the site design. Last year was a busy year, and I didn't make much time for this site or writing. I'm trying to change that this year and so a refreshed look was a good way to start.
 
 The change was inspired mostly by a new headshot that I had taken by a good friend, Sarah Mayo. She takes excellent photos. She just finished rebranding and you can [follow her on Facebook](http://www.facebook.com/SarahMayoPhotography) or send her an email at [hello@sarahmayophotography.com](mailto:hello@sarahmayophotography.com).
 
