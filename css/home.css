@@ -100,6 +100,11 @@ ul.posts li span {
   color: #666;
 }
 
+.post {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .post p {
   font-size: 14px;
   font-weight: 400;
@@ -131,9 +136,17 @@ ul.posts li span {
 
 .post code {
   border: 1px solid #ddd;
-  background-color: #eef;
-  font-size: 85%;
+  font-size: 95%;
   padding: 0 .2em;
+  color: #626262;
+  background: #EAEAEA;
+}
+
+.post pre {
+  background: #EAEAEA;
+  padding: 10px;
+  margin-left: -55px;
+  margin-right: -55px;
 }
 
 .post pre code {
@@ -184,5 +197,8 @@ ul.posts li span {
   }
   ul.posts li span {
     display: none;
+  }
+  .post pre {
+    margin: 0;
   }
 }
