@@ -2,3 +2,6 @@ markdown: rdiscount
 pygments: true
 
 enable_disqus: false
+
+prose:
+  siteurl: "http://dwradcliffe.com"
