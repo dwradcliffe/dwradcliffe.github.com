@@ -3,7 +3,8 @@ published: false
 layout: post
 comments: true
 related: false
-description: How to use custom OpenSSL with Nginx
+description: How to use custom OpenSSL with nginx
+title: Custom OpenSSL with nginx
 ---
 
 Recently, I wanted to deploy TLSv1.1 and TLSv1.2 to our nginx servers. According to the nginx docs, this requires OpenSSL version 1.0.1 or higher. We're running CentOS 6.3 and the latest  version in the default respositories is `OpenSSL 1.0.0-fips 29 Mar 2010`.
@@ -21,4 +22,3 @@ The configure command might look like this:
     ./configure --with-http_ssl_module --with-openssl=/path/to/openssl-1.0.1e
     
 (Of course, you might need more flags for your specific installation.)
-
