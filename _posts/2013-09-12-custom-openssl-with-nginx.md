@@ -22,3 +22,7 @@ The configure command might look like this:
     ./configure --with-http_ssl_module --with-openssl=/path/to/openssl-1.0.1e
     
 (Of course, you might need more flags for your specific installation.)
+
+### Bonus for Chef users
+
+I wrote a chef recipe that will download and include the OpenSSL source and flags when compiling nginx from source. The recipe has been [added](https://github.com/opscode-cookbooks/nginx/commit/869962e5d034ad5755094143dadf16ef64b0e0e3) to the [official nginx cookbook](http://community.opscode.com/cookbooks/nginx) and should be available in the next release. It can be used just like any other nginx module, by adding `nginx::openssl_source` to `node['nginx']['source']['modules']`.
