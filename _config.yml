@@ -1,6 +1,9 @@
 markdown: rdiscount
 pygments: true
 
+exclude:
+  - README.textile
+
 enable_disqus: false
 
 prose:
