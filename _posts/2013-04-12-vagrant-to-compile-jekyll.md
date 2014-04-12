@@ -34,7 +34,7 @@ Now you are ready to start your VM. From a command prompt in your project direct
 Now you can start Jekyll on the VM:
 
     $ cd /vagrant
-    $ jekyll --auto --server 4000
+    $ jekyll serve --watch 4000
 
 Now you should be able to use your own regular web browser to view the site at [http://localhost:4000](http://localhost:4000)
 
