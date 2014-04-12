@@ -10,17 +10,17 @@ So let's say that you want to build a simple website using [Jekyll](http://jekyl
 
 To start you will need to install Vagrant and VirtualBox. (Yes, I know you can use other providers such as VMware Fusion, but VirtualBox is free and easy.)
 
-Download Vagrant: [downloads.vagrantup.com](http://downloads.vagrantup.com)
+Download Vagrant: [www.vagrantup.com/downloads.html](http://www.vagrantup.com/downloads.html)
 
 Download VirtualBox: [www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 
 You will need a `Vagrantfile` in your project root to configure Vagrant. Here is a boiled down version with everything you will need:
 
-    Vagrant::Config.run do |config|
+    Vagrant.configure("2") do |config|
 
       config.vm.box = "precise32"
       config.vm.box_url = "http://files.vagrantup.com/precise32.box"
-      config.vm.forward_port 4000, 4000
+      config.vm.network :forwarded_port, host: 4000, guest: 4000
       config.vm.provision :shell,
         :inline => "sudo apt-get -y install build-essential && sudo /opt/vagrant_ruby/bin/gem install jekyll rdiscount --no-ri --no-rdoc"
 

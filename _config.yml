@@ -3,6 +3,7 @@ pygments: true
 
 exclude:
   - README.textile
+  - Vagrantfile
 
 enable_disqus: false
 
