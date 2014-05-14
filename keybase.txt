@@ -1,0 +1,77 @@
+==================================================================
+https://keybase.io/dwradcliffe
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://dwradcliffe.com
+  * I am dwradcliffe (https://keybase.io/dwradcliffe) on keybase.
+  * I have a public key with fingerprint 7DA4 5F36 4145 8746 93E4  E73C 330F 18D7 51B6 5B7A
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.3.2"
+        },
+        "key": {
+            "fingerprint": "7da45f364145874693e4e73c330f18d751b65b7a",
+            "host": "keybase.io",
+            "key_id": "330F18D751B65B7A",
+            "uid": "06f2412ce9baadfc120739bec1664700",
+            "username": "dwradcliffe"
+        },
+        "merkle_root": {
+            "ctime": 1400087905,
+            "hash": "40e63a1b2e8126053e45db37be4c070a832f56cee4d7c72d313a1d4ef17aeb94f3cae1173aeafa02e670ce117d767c64391c06d099ea3626bf273437502177fd",
+            "seqno": 8092
+        },
+        "service": {
+            "hostname": "dwradcliffe.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1400087928,
+    "expire_in": 157680000,
+    "prev": "492fd6808f0fa87f46c71188eaed63e2884d363ced5d9df6532f391c663c6c60",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - http://gpgtools.org
+
+owFlkm2IVUUYx+9qbrpmiGb0suB2StBcLjNn5sycc6FIE6WW1HbBoMDLnJln7j3r
+7jn3nnN39WK3lohIesHCYjPDTdHsQ+qW4cuiH6q16GUjiE0WpEDUXrdACz8INrNs
+9PZt5nl+z3+e//PM9nkzcy1N4sZK0Rl7njd99kOY68r2bdnqhImqO4WtjuyJIK7Z
+Uyx6wSk4m6AeigzyUdIWJwry3VnbNNPu9EOaRUlsKJQneddptFvcFusoLkFaSSOr
+5XAlqKcJo5h6PqcsIECBE0kI0thX3MMh80IujGQ5yWr/etWZ0ixGykQNvxr7qwy/
+knkr+QqT65tKIKZdil0JQSiE0hK7iJMgBIkZoxwhC2aQTltSm1OhjAmtwbbcC+mm
+HiimSTLlW9YiS2GKEPJ5gDzTlMjKpo4iYETg0AUfuwx5xoWnQsJDoBJxJHziao9J
+AKq45K4i2NCKgsZcQBhQTaQAjDkRILRALjCOpA0ozrhklARYIqZQEIAgzGWhdjmh
+hHvIxZxrZVxkUI0Tp+CjwG3YW9ofSbBd27n9315eJr2mqpImtUQmPSZZrtUqBeu6
+Vq9YeHgzhMVpnWIYxcos7p+bxQb9z0Rcv92BLZUohWJkCY8z32SQfQf67ZwCVysT
+8zXSwueaMskx9n0QoBgB1/epIoxIUJ4KlGaemZv1zkyMSYb+9slMn6JkJLOoFIta
+X2oWtq2p9bpcU0uuedYM+3VzLXPm//WfD49ffy0ZeO+RK+it0XefnDO29vfDFyeL
+O5zT8P32NdUvaH35q3vDVYXBgUc33H2Hf1PPqRWDjeG7Hnh95B723YxX+pf/9PBv
+4oQ4eOK1PV9duta54OXGwM3FnUffXHD5WPPcrseP3LCvuvjkjwufLX06byI5cu+t
+lzuWid2zl+5/v9T4cvSPpzq7u8+eK3975+Krhebb96xrfWfoNDx9se/8Q3Pjl3a9
+uKRrbfnolarqrMLgB0+8MPzJc2e3fbQffXMeP/bMsqHcogu3ndlVkF8vqf861lE+
+cMvORQsPrW5rLJ0cv+pPjJzp2PjLx5+THW+3Dr1xfNb6kdmT5y7tvX+0ef6Hx9ft
+njkx3rvmwPoLg50/P3jwvj8B
+=Od1Z
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dwradcliffe
+
+==================================================================
