@@ -3,8 +3,8 @@ published: true
 layout: post
 comments: true
 related: false
-description: Using Chef DK alongside rbenv
-title: Using Chef DK alongside rbenv for development
+description: Using Chef DK alongside rbenv for development
+title: Using Chef DK alongside rbenv
 ---
 
 Chef recently released the [Chef Development Kit](https://downloads.getchef.com/chef-dk/) to help developers get their environment configured for Chef easily. This package includes Chef, Berkshelf, Test Kitchen and more. The idea is that to work on a cookbook or chef environment you wouldn't need to `bundle install` or setup any other rubies/gems/dependencies to get started working. This is a great idea and probably the best side effect is that we don't need to type `bundle exec` anymore!
