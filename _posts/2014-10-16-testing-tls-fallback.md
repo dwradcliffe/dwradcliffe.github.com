@@ -9,7 +9,7 @@ title: Testing TLS_FALLBACK_SCSV
 
 The POODLE is on the loose and we're all trying to kill off SSLv3 and enable this new TLS_FALLBACK_SCSV thing. I had a hard time finding this information but it's actually pretty easy to test TLS_FALLBACK_SCSV.
 
-You will need the latest version of OpenSSL - 1.0.1j. I hacked my homebrew formula to compile, and I'm sure the forumula will be updated shortly.
+You will need the latest version of OpenSSL - 1.0.1j. I hacked my homebrew formula to compile, and I'm sure the formula will be updated shortly.
 
 We will use the `s_client` command to initiate a connection:
 
@@ -33,4 +33,4 @@ Now let's look at a server that does not support TLS_FALLBACK_SCSV:
     Protocol  : TLSv1.1
     Cipher    : ECDHE-RSA-AES128-SHA
 
-The connection is successfull even though we attempted a 'fallback' connection.
+The connection is successful even though we attempted a 'fallback' connection.
