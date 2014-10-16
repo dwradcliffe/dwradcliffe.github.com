@@ -7,9 +7,9 @@ description: How to test TLS_FALLBACK_SCSV using OpenSSL
 title: Testing TLS_FALLBACK_SCSV
 ---
 
-The POODLE is on the loose and we're all trying to kill off SSLv3 and enable this new TLS_FALLBACK_SCSV thing. I had a hard time finding this information but it's actually pretty easy to test TLS_FALLBACK_SCSV.
+The [POODLE is on the loose](http://googleonlinesecurity.blogspot.com/2014/10/this-poodle-bites-exploiting-ssl-30.html) and we're all trying to kill off SSLv3 and enable this new [TLS_FALLBACK_SCSV](https://tools.ietf.org/html/draft-ietf-tls-downgrade-scsv-00) thing. I had a hard time finding this information but it's actually pretty easy to test TLS_FALLBACK_SCSV.
 
-You will need the latest version of OpenSSL - 1.0.1j. I hacked my homebrew formula to compile, and I'm sure the formula will be updated shortly.
+You will need the latest version of [OpenSSL - 1.0.1j](https://www.openssl.org/source/). I hacked my homebrew formula to compile, and I'm sure the formula will be updated shortly.
 
 We will use the `s_client` command to initiate a connection:
 
