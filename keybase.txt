@@ -4,7 +4,7 @@ https://keybase.io/dwradcliffe
 
 I hereby claim:
 
-  * I am an admin of http://dwradcliffe.com
+  * I am an admin of https://dwradcliffe.com
   * I am dwradcliffe (https://keybase.io/dwradcliffe) on keybase.
   * I have a public key with fingerprint 7DA4 5F36 4145 8746 93E4  E73C 330F 18D7 51B6 5B7A
 
@@ -46,7 +46,7 @@ with the aforementioned key, yielding the PGP signature:
 
 -----BEGIN PGP MESSAGE-----
 Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
-Comment: GPGTools - http://gpgtools.org
+Comment: GPGTools - https://gpgtools.org
 
 owFlkm2IVUUYx+9qbrpmiGb0suB2StBcLjNn5sycc6FIE6WW1HbBoMDLnJln7j3r
 7jn3nnN39WK3lohIesHCYjPDTdHsQ+qW4cuiH6q16GUjiE0WpEDUXrdACz8INrNs

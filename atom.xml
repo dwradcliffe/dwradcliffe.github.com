@@ -2,13 +2,13 @@
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="https://www.w3.org/2005/Atom">
 
  <title>David Radcliffe</title>
- <link href="http://dwradcliffe.com/atom.xml" rel="self"/>
- <link href="http://dwradcliffe.com/"/>
+ <link href="https://dwradcliffe.com/atom.xml" rel="self"/>
+ <link href="https://dwradcliffe.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://dwradcliffe.com/</id>
+ <id>https://dwradcliffe.com/</id>
  <author>
    <name>David Radcliffe</name>
    <email>david@etchdev.com</email>
@@ -17,9 +17,9 @@
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://dwradcliffe.com{{ post.url }}"/>
+   <link href="https://dwradcliffe.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://dwradcliffe.com{{ post.id }}</id>
+   <id>https://dwradcliffe.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

@@ -2,10 +2,10 @@
 layout: post
 title: Managing multiple web app configs
 ---
- 
+
 <p>One of the most important things that you must do when building a web app is to keep distinct and separate configs for each environment. This is importnant because for one, your database will be different between development and production (and possibly testing and staging). You won't want to actually send emails in development, and you'll probably want to enable test mode for any payment providers or other third-party APIs. The list could go on - there are many use-cases and reasons why you should keep sepearate config. It boils down to this: you shouldn't have to worry about changing these things when you're ready to deploy or test.</p>  <div id='extendedEntryBreak' name='extendedEntryBreak'></div>  <p>This concept, and how to accoplish it, is a no brainer for Rails developers and even some PHP developers.  In the .NET world this is a fiarly new concept and there hasn't been much support for anything of the sort until recently. With VisualStudio 2010 Microsoft brought us the idea of config transforms. I'm not going to go into the details but basically you have to write xml transformations to customize your main config file. That wasn't going to cut it for me so I set out to come up with a better plan. This is what I came up with.</p>  <p style="font-size:1em;font-weight:bold;">NOTE: This is in the context of a ASP.NET MVC project.</p>  <p>Inside our web project we have a standard web.config file. We also have a Config folder, with a folder insie for each environment. This one has four environments, development, production, staging and test.</p>
 
-<p><img src="http://dwradcliffe.com/wp/wp-content/uploads/config-folders.png" alt="" title="config-folders" width="253" height="250" class="alignnone size-full wp-image-4235" /></p>
+<p><img src="https://dwradcliffe.com/wp/wp-content/uploads/config-folders.png" alt="" title="config-folders" width="253" height="250" class="alignnone size-full wp-image-4235" /></p>
 
 <p>Inside each of these env folders are section specific config files. .NET config files support including files from another location. This means our main web.config file is pretty lean. Here's a snippet:</p>
 
@@ -32,7 +32,7 @@ namespace :config do
        cp_r "Web/Config/#{e}/.", 'Web/Config'
     end
   end
-  
+
   desc "Clean out all active config files"
   task :clean do
     rm Dir.glob('Web/Config/*.config')
